@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: sample
+  main:
+    allow-bean-definition-overriding: true
+  threads:
+    virtual:
+      enabled: true
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui
+  api-docs:
+    path: /api-docs
+
+server:
+  error:
+    include-message: always
+
+management:
+  endpoint:
+    health:
+      probes:
+        enabled: true
